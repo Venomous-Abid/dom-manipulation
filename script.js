@@ -32,6 +32,12 @@ function redirectToGoogle() {
 
 $('#addText4').click(function(event){
     var paragraph =$('<p>').text("Helloooo Miss");
-    $('task4a').append(paragraph);
+    $('#task4a').append(paragraph);
     
 });
+
+//task 4b
+function changeBG(event) {
+    var color = event.target.innerText.toLowerCase();
+    $('body').css('backgroundColor',color);
+}
